@@ -11,6 +11,25 @@ package cdmaquinacafe;
  */
 public class Monedero {
     //llevaremos la cuenta en centimos
-    int saldo;
-    int precioP1=50,precioP2=60,precioP3=80;
+    private int saldo;
+    private int[] precio={50,40,60};
+
+    public int getPrecio(int producto) {
+        return precio[producto];
+    }
+                
+    public int comprobarSaldo(){
+        return saldo;
+    }
+    
+    public void aumentarSaldo(int cantidad){
+        //Meter una comprobacion de que cantidad es positiva?
+        saldo+=cantidad;
+    }
+    
+    public int devolverSaldo(){
+        int vuelta=saldo;
+        saldo=0;
+        return vuelta;
+    }
 }
