@@ -8,12 +8,13 @@ package cdmaquinacafe;
 import javax.swing.JOptionPane;
 
 /**
- *
+ *Esta el la clase Main del programa. Instancia las otras clases necesarias y se
+ * encarga de dar las ordenes a la maquina
  * @author otorradomiguez
  */
 public class CDMaquinaCafe {
 
-    /**
+    /**Metodo Main del programa. Se mantiene en bucle hasta que el usuario pulsa cancelar
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -31,8 +32,8 @@ public class CDMaquinaCafe {
                     break;
                 case 2:
                     //cancelar
-                    monedero1.devolverSaldo();
                     Display.verSaldo(monedero1);
+                    monedero1.devolverSaldo();
                     break;
                 case 3:
                     //te
